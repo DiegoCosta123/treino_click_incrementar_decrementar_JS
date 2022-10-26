@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Número incrementar</title>
+
+    </head>
+
+    <body> 
+        <button id="numDecrm">-</button>
+        <button id="numIncrm">+</button>
+        <h2 id="numInit">0</h2>
+        
+        <script>
+
+            let number = document.getElementById("numInit");
+
+            const button1 = document.getElementById("numIncrm");
+            const button2 = document.getElementById("numDecrm");
+
+            let i = 0;
+            
+            button1.addEventListener("click", () => {
+                i++;
+                number.textContent = i;
+                console.log(number.textContent = i);
+            })
+
+            button2.addEventListener("click", () => {
+                if(i >= 1) {
+                    i--;
+                    number.textContent = i;
+                }
+            })
+
+
+        </script>
+        
+    </body>
+</html>
+
